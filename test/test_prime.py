@@ -31,3 +31,6 @@ class PrimeTestCase(unittest.TestCase):
     
     def test_number_is_last_digit_in_prime_list(self):
         self.assertEqual(prime_numbers(97)[-1], 97)
+
+    def test_if_tuple(self):
+        self.assertEqual(prime_numbers(()), "Only integers allowed")
