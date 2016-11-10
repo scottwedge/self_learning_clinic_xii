@@ -15,4 +15,15 @@ class PrimeTestCase(unittest.TestCase):
         self.assertEqual(prime_numbers(1), "Cannot find prime for less than 2")
 
     def test_prime_number_two(self):
-        self.assertEqual(prime_numbers(2), 2)
+        self.assertEqual(prime_numbers(2), [2])
+
+    def test_integer_number(self):
+        self.assertEqual(prime_numbers("5"), "Only integers allowed")
+
+    def test_bool(self):
+        self.assertEqual(prime_numbers(True), "Only integers allowed")
+
+   
+    def test_prime_number_eleven(self):
+        self.assertEqual(prime_numbers(11), [2, 3, 5, 7, 11])
+

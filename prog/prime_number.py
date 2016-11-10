@@ -14,12 +14,14 @@ def prime_numbers(n):
     """
     Generate prime numbers from 0 to n
     """
+    out = []
+    if isinstance(n, bool):
+        return "Only integers allowed"
+    if not isinstance(n, int):
+        return "Only integers allowed"
     if n < 2:
         return "Cannot find prime for less than 2"
     for y in range(1, n + 1):
         if is_prime(y):
-            return(y)
-print(prime_numbers(0))
-print(prime_numbers(1))
-print(prime_numbers(2))
-print(prime_numbers(97))
+            out.append(y)
+    return out
