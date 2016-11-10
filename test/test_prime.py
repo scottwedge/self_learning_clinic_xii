@@ -17,10 +17,10 @@ class PrimeTestCase(unittest.TestCase):
     def test_prime_number_two(self):
         self.assertEqual(prime_numbers(2), [2])
 
-    def test_integer_number(self):
+    def test_if_input_is_a_string(self):
         self.assertEqual(prime_numbers("5"), "Only integers allowed")
 
-    def test_bool(self):
+    def test_bool_input(self):
         self.assertEqual(prime_numbers(True), "Only integers allowed")
     
     def test_prime_number_eleven(self):
