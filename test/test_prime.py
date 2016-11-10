@@ -22,8 +22,12 @@ class PrimeTestCase(unittest.TestCase):
 
     def test_bool(self):
         self.assertEqual(prime_numbers(True), "Only integers allowed")
-
-   
+    
     def test_prime_number_eleven(self):
         self.assertEqual(prime_numbers(11), [2, 3, 5, 7, 11])
 
+    def test_if_input_is_list(self):
+        self.assertEqual(prime_numbers([]), "Only integers allowed")
+    
+    def test_number_is_last_digit_in_prime_list(self):
+        self.assertEqual(prime_numbers(97)[-1], 97)
