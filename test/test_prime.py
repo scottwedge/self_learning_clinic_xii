@@ -36,7 +36,7 @@ class PrimeTestCase(unittest.TestCase):
         self.assertEqual(prime_numbers(()), "Only integers allowed")
 
     def test_if_is_prime(self):
-    	self.assertEqual(is_prime(5), True)
+        self.assertEqual(is_prime(5), True)
 
     def test_if_is__not_prime(self):
-    	self.assertEqual(is_prime(6), False)
+        self.assertEqual(is_prime(6), False)
