@@ -7,6 +7,8 @@ def is_prime(x):
     p_status = True
     if x < 2:
         p_status = False
+    elif x == 2:
+        p_status = True
     else:
         for i in range(2, x):
             if x % i == 0:
