@@ -2,7 +2,7 @@
 
 from prog.car_class_lab import Car
 
-import unnittest
+import unittest
 
 class CarClassTest(unittest.TestCase):
     """docstring for CarClassTest"""
